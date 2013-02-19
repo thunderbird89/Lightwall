@@ -8,10 +8,13 @@ rgb = color()
 print ('Enter color values')
 print ('red:', end=' ')
 rgb.R = input()
+rgb.R=int(rgb.R, base=10)
 print ('green:', end=' ')
 rgb.G = input()
+rgb.G=int(rgb.G, base=10)
 print ('blue:', end=' ')
 rgb.B = input()
+rgb.B=int(rgb.B, base=10)
 print (rgb)
 
 
