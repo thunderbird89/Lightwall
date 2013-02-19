@@ -17,6 +17,15 @@ rgb.B = input()
 rgb.B=int(rgb.B, base=10)
 print (rgb)
 
+#Formulate word for pixels
+rgbr=bin(rgb.R)[2:].zfill(8)    #Convert int into binary, pad with zeroes to form 8-bit str
+rgbg=bin(rgb.G)[2:].zfill(8)    #Convert int into binary, pad with zeroes to form 8-bit str
+rgbb=bin(rgb.B)[2:].zfill(8)    #Convert int into binary, pad with zeroes to form 8-bit str
+print (rgbr)
+print (rgbg)
+print (rgbb)
+transmit=rgbb+','+rgbg+','+rgbr #REMOVE COMMAS IN FINAL BUILD, LEST IT BREAK THE PROGRAM!!!
+print (transmit)
 
 ##import wiring interface, set up clock and data lines
 #import wiringpi
